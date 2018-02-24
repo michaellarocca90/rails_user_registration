@@ -1,0 +1,28 @@
+
+<form action="/log_in_submit" method="get">
+  <table>
+    <tr>
+      <td>
+        <label>Email</label>
+      </td>
+      <td>
+        <label>Password</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="email" name="email" value="" />
+      </td>
+      <td>
+        <input type="password" name="password" value="" />
+      </td>
+      <td>
+        <input style="background-color:#4267b2; color:white;" type="submit" value="Log In" />
+      </td>
+    </tr>
+  </table>
+</form>
+
+<% if flash[:notice] %>
+   <div class="notice"><%= flash[:notice] %></div>
+ <% end %>

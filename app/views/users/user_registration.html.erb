@@ -1,0 +1,15 @@
+
+<form action="user_registration/" method="post">
+  User Name: <input name="username" type="text" value="" /><br />
+  Password: <input name="password" type="password" value="" /><br />
+  Full Name: <input name="full_name" type="text" value="" /><br />
+  Address: <input name="address" type="text" value="" />
+  City: <input name="city" type="text" value="" />
+  State: <input name="state" type="text" value="" />
+  Zip: <input name="zip" type="number" value="" />
+  County: <input name="country" type="text" value="" /><br />
+  Email: <input name="email" type="email" value="" /><br />
+  <input type="submit" value="Submit" />
+  <% if flash[:notice] %>
+     <div class="notice"><%= flash[:notice] %></div>
+   <% end %>
